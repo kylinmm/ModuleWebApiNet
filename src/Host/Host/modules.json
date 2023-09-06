@@ -1,0 +1,10 @@
+﻿[
+  {
+    "id": "testApi",
+    "name": "测试",
+    "isBundledWithHost": true,
+    "lastVersion": "0.0.0",
+    "version": "1.0.0",
+    "description": "测试demo"
+  }
+]
