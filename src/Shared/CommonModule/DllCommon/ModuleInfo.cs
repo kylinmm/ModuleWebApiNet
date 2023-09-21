@@ -25,5 +25,8 @@ namespace CommonModule.DllCommon
 
         [JsonIgnore]
         public Assembly Assembly { get; set; }
+
+        [JsonPropertyName("entryClass")]
+        public string EntryClass { get; set; }
     }
 }

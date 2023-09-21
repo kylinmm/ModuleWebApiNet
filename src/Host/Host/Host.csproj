@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Modules\FunctionTest\FunctionTest.csproj" />
     <ProjectReference Include="..\..\Modules\testApi\testApi.csproj" />
     <ProjectReference Include="..\..\Shared\CommonModule\CommonModule.csproj" />
   </ItemGroup>

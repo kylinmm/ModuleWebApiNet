@@ -5,6 +5,16 @@
     "isBundledWithHost": true,
     "lastVersion": "0.0.0",
     "version": "1.0.0",
-    "description": "测试demo"
+    "description": "测试demo",
+    "entryClass": ""
+  },
+  {
+    "id": "FunctionTest",
+    "name": "方法测试",
+    "isBundledWithHost": true,
+    "lastVersion": "0.0.0",
+    "version": "1.0.0",
+    "description": "测试demo",
+    "entryClass": "Main"
   }
 ]
