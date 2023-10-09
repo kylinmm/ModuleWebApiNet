@@ -20,9 +20,9 @@ namespace Host.Controllers
         }
 
         [HttpGet(Name = "uploadAssembly")]
-        public List<(string, string)> Get()
+        public List<string> Get()
         {
-            List<(string, string)> a = new List<(string, string)>();
+            List<string> result = new List<string>();
 
             foreach (var item in GlobalConfiguration.Modules)
             {
@@ -34,14 +34,14 @@ namespace Host.Controllers
                 MethodInfo[] mInfo = type.GetMethods(); //获取当前方法
                 for (int i = 0; i < mInfo.Length; i++)
                 {
-                    a.Add((item.Id, mInfo[i].Name));
+                    result.Add($"程序集{item.Id}中包含方法{mInfo[i].Name}");
                 }
             }
 
 
             // Debug.Log("调用AAA()方法: " + mInfo[0].Invoke(obj, new object[0]));
             // Debug.Log("调用BBB(int a,int b)方法: " + mInfo[1].Invoke(obj, new object[] { 10, 5 }));
-            return a;
+            return result;
 
         }
     }
